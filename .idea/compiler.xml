@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="guan-base-dao" />
+        <module name="guan-base-common" />
+        <module name="guan-base-service" />
+        <module name="guan-base-web" />
+        <module name="guan-base-utils" />
+        <module name="guan-base-domain" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
