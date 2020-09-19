@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.base.guan</groupId>
     <artifactId>guan-base-web</artifactId>
-    <version>1.0.0</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>guan-base-web</name>
     <description>GUAN论系统-初始-主项目</description>
@@ -38,10 +38,10 @@
     <build>
         <resources>
             <resource>
-                <directory>src/main/java</directory>
+                <directory>src/main/resources</directory>
             </resource>
             <resource>
-                <directory>src/main/resources</directory>
+                <directory>src/main/java</directory>
             </resource>
         </resources>
         <plugins>

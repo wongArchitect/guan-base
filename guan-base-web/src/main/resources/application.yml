@@ -1,0 +1,5 @@
+# logback.xml中有详细的日志配置
+#logging:
+#  config:classpath:conf/logback.xml
+#logback:
+#  configuration:property:LOG_PATH:./logs/

@@ -1,5 +1,8 @@
 package com.base.guan.web.controller;
 
+import com.base.guan.web.Application;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +19,8 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class IndexController {
 
+    private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
+
     /**
      * 首页/history页面
      * http://layout.jd.com
@@ -24,6 +29,7 @@ public class IndexController {
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView index() {
+        logger.info("登录");
         return new ModelAndView("index");
     }
 

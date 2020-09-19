@@ -1,5 +1,7 @@
 package com.base.guan.web;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -24,6 +26,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @EnableAsync
 public class Application extends SpringBootServletInitializer {
+
+    private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
     /**
      * Application
@@ -53,6 +57,6 @@ public class Application extends SpringBootServletInitializer {
         SpringApplicationBuilder builder = new SpringApplicationBuilder(Application.class);
         builder.bannerMode(Banner.Mode.OFF);
         builder.run(args);
-        System.out.println("启动主程序成功" );
+        logger.info("启动主程序成功" );
     }
 }
