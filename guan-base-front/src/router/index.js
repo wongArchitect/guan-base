@@ -21,7 +21,7 @@ import Layout from '@/layout'
     title: 'title'               the name show in sidebar and breadcrumb (recommend set)
     icon: 'svg-name'/'el-icon-x' the icon show in the sidebar
     breadcrumb: false            if set false, the item will hidden in breadcrumb(default is true)
-    activeMenu: '/example/list'  if set path, the sidebar will highlight the path you set
+    activeMenu: '/guan-search/list'  if set path, the sidebar will highlight the path you set
   }
  */
 
@@ -46,36 +46,105 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/dashboard',
+    redirect: '/workbench',
     children: [{
-      path: 'dashboard',
-      name: 'Dashboard',
-      component: () => import('@/views/dashboard/index'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
+      path: 'workbench',
+      name: 'workbench',
+      component: () => import('@/views/workbench/index'),
+      meta: { title: '工作台', icon: 'workbench' }
     }]
   },
 
   {
-    path: '/example',
+    path: '/guan-search',
     component: Layout,
-    redirect: '/example/table',
-    name: 'Example',
-    meta: { title: 'Example', icon: 'el-icon-s-help' },
+    redirect: '/guan-search/search',
+    name: 'guan-search',
+    meta: { title: 'GUAN论检索', icon: 'el-icon-s-help' },
     children: [
       {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        path: 'search',
+        name: 'Search',
+        component: () => import('@/views/search/index'),
+        meta: { title: 'Search', icon: 'table' }
       }
     ]
   },
+
+{
+  path: '/guan-content',
+    component: Layout,
+  redirect: '/guan-content/content',
+  name: 'guan-content',
+  meta: { title: 'GUAN论', icon: 'form' },
+  children: [
+    {
+      path: 'content',
+      name: 'Content',
+      component: () => import('@/views/content/content'),
+    meta: { title: '文件管理器', icon: 'table' }
+},
+  {
+    path: 'tail',
+    name: 'Tail',
+    component: () => import('@/views/content/tail'),
+    meta: { title: '详情页', icon: 'table' }
+  },
+  {
+    path: 'update',
+      name: 'Update',
+    component: () => import('@/views/content/update'),
+    meta: { title: '新增/修改', icon: 'table' }
+  },
+  {
+    path: 'upload',
+      component: () => import('@/views/content/upload/upload'),
+    name: 'Upload',
+    meta: { title: '上传', icon: 'form' },
+    children: [
+      {
+        path: 'upload',
+        name: 'Upload',
+        component: () => import('@/views/content/upload/upload'),
+      meta: { title: '上传', icon: 'table' }
+      },
+      {
+        path: 'conflict',
+        name: 'Conflict',
+        component: () => import('@/views/content/upload/conflict'),
+        meta: { title: '冲突处理', icon: 'table' }
+      }
+    ]
+  },
+  {
+    path: 'download',
+      name: 'Download',
+    component: () => import('@/views/content/download'),
+    meta: { title: '下载', icon: 'table' }
+  }
+]
+},
+{
+  path: '/example',
+    component: Layout,
+  redirect: '/example/table',
+  name: 'Example',
+  meta: { title: 'Example', icon: 'el-icon-s-help' },
+  children: [
+    {
+      path: 'table',
+      name: 'Table',
+      component: () => import('@/views/table/index'),
+    meta: { title: 'Table', icon: 'table' }
+},
+  {
+    path: 'tree',
+      name: 'Tree',
+    component: () => import('@/views/tree/index'),
+    meta: { title: 'Tree', icon: 'tree' }
+  }
+]
+},
 
   {
     path: '/form',
