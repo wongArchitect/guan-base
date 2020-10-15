@@ -1,0 +1,38 @@
+<included>
+    <!-- 定义输出控制台 ConsoleAppender -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 包含1个encoder -->
+        <encoder>
+            <pattern>${console_pattern}</pattern>
+        </encoder>
+        <!-- 包含1个target，System.out 或者是System.err，默认为System.out -->
+        <target>System.out</target>
+        <!-- 包含1个 withJansi， 是否对不同级别的日志用颜色来区分 -->
+        <withJansi>false</withJansi>
+    </appender>
+
+    <!-- 定义RollingFileAppender -->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 设置日志文件的名称 -->
+        <file>${file_root_app_dir}/${app_name}_log.txt</file>
+        <!-- 设置是否追加在日志文件，该值默认为true -->
+        <append>true</append>
+        <!-- 设置immediateFlush -->
+        <immediateFlush>true</immediateFlush>
+        <!-- 设置rollingPolicy -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 指定fileNamePattern，定义日志文件或者是压缩包存放的位置，如果存在file属性，日志输出到file文件中，fileNamePattern存放日志压缩文件的路径 -->
+            <fileNamePattern>${file_root_app_history_dir}/%d{yyyy/MM,aux}/%d{yyyy-MM-dd}_log%i.zip</fileNamePattern>
+            <!-- 每个文件的大小 -->
+            <maxFileSize>5MB</maxFileSize>
+            <!-- 指定最大的历史，365天，对应fileNamePattern中的日期格式 -->
+            <maxHistory>365</maxHistory>
+            <!-- 日志文件的总大小,20GB -->
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <!-- 设置一个或者多个encoder -->
+        <encoder>
+            <pattern>${file_pattern}</pattern>
+        </encoder>
+    </appender>
+</included>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration>
-    <property resource="application.properties" />
+    <property resource="logback.properties" />
 
     <property name="CONTEXT_NAME" value="${logging.context.name}"/>
     <property name="LOG_PATH" value="${logging.file.path}"/>

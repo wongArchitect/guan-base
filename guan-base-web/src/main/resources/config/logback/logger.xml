@@ -1,0 +1,7 @@
+<included>
+    <!-- 定义logger -->
+    <logger name="com.base.guan.test" level="debug" additivity="false">
+        <appender-ref ref="console" />
+        <appender-ref ref="file" />
+    </logger>
+</included>
