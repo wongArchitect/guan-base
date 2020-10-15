@@ -39,7 +39,7 @@ public class Application extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        application.bannerMode(Banner.Mode.CONSOLE);
+        application.bannerMode(Banner.Mode.OFF);
         return application.sources(Application.class);
     }
 

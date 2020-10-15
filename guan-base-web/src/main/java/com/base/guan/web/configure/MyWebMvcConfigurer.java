@@ -28,7 +28,7 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer, ErrorPageRegistrar 
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/templates/static/");
         registry.addResourceHandler("/templates/**").addResourceLocations("classpath:/templates/");
     }
 

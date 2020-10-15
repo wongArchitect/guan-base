@@ -30,6 +30,12 @@ public class IndexController {
         return new ModelAndView("index");
     }
 
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public ModelAndView login() {
+        logger.info("登录");
+        return new ModelAndView("login");
+    }
+
     /**
      * 用户设置（参数管理）
      * http://layout.jd.com/ParameterConfig
