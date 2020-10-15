@@ -1,0 +1,74 @@
+2020-10-15 16:43:28.565 com.base.guan.web.Application 
+[main]    INFO: Starting Application on DESKTOP-B2BPM6Q with PID 16476 (E:\precipitate\workspace\guan\back-end\guan-base\guan-base-web\target\classes started by jodron in E:\precipitate\workspace\guan\back-end\guan-base) 
+2020-10-15 16:43:28.569 com.base.guan.web.Application 
+[main]    INFO: The following profiles are active: dev 
+2020-10-15 16:43:31.200 org.springframework.boot.web.embedded.tomcat.TomcatWebServer 
+[main]    INFO: Tomcat initialized with port(s): 82 (http) 
+2020-10-15 16:43:31.214 org.apache.coyote.http11.Http11NioProtocol 
+[main]    INFO: Initializing ProtocolHandler ["http-nio-82"] 
+2020-10-15 16:43:31.215 org.apache.catalina.core.StandardService 
+[main]    INFO: Starting service [Tomcat] 
+2020-10-15 16:43:31.219 org.apache.catalina.core.StandardEngine 
+[main]    INFO: Starting Servlet engine: [Apache Tomcat/9.0.35] 
+2020-10-15 16:43:31.342 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 
+[main]    INFO: Initializing Spring embedded WebApplicationContext 
+2020-10-15 16:43:31.342 org.springframework.web.context.ContextLoader 
+[main]    INFO: Root WebApplicationContext: initialization completed in 2660 ms 
+2020-10-15 16:43:31.636 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 
+[main]    INFO: Initializing ExecutorService 'applicationTaskExecutor' 
+2020-10-15 16:43:31.735 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 
+[main]    INFO: Adding welcome page template: index 
+2020-10-15 16:43:31.819 org.thymeleaf.templatemode.TemplateMode 
+[main]    WARN: [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead. 
+2020-10-15 16:43:31.906 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler 
+[main]    INFO: Initializing ExecutorService 'taskScheduler' 
+2020-10-15 16:43:31.928 org.apache.coyote.http11.Http11NioProtocol 
+[main]    INFO: Starting ProtocolHandler ["http-nio-82"] 
+2020-10-15 16:43:31.961 org.springframework.boot.web.embedded.tomcat.TomcatWebServer 
+[main]    INFO: Tomcat started on port(s): 82 (http) with context path '' 
+2020-10-15 16:43:31.986 com.base.guan.web.Application 
+[main]    INFO: Started Application in 4.564 seconds (JVM running for 7.626) 
+2020-10-15 16:43:31.989 com.base.guan.web.Application 
+[main]    INFO: 启动主程序成功 
+2020-10-15 16:58:30.339 com.base.guan.web.Application 
+[main]    INFO: Starting Application on DESKTOP-B2BPM6Q with PID 13588 (E:\precipitate\workspace\guan\back-end\guan-base\guan-base-web\target\classes started by jodron in E:\precipitate\workspace\guan\back-end\guan-base) 
+2020-10-15 16:58:30.346 com.base.guan.web.Application 
+[main]    INFO: The following profiles are active: dev 
+2020-10-15 16:58:32.854 org.springframework.boot.web.embedded.tomcat.TomcatWebServer 
+[main]    INFO: Tomcat initialized with port(s): 80 (http) 
+2020-10-15 16:58:32.881 org.apache.coyote.http11.Http11NioProtocol 
+[main]    INFO: Initializing ProtocolHandler ["http-nio-80"] 
+2020-10-15 16:58:32.883 org.apache.catalina.core.StandardService 
+[main]    INFO: Starting service [Tomcat] 
+2020-10-15 16:58:32.884 org.apache.catalina.core.StandardEngine 
+[main]    INFO: Starting Servlet engine: [Apache Tomcat/9.0.35] 
+2020-10-15 16:58:33.094 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 
+[main]    INFO: Initializing Spring embedded WebApplicationContext 
+2020-10-15 16:58:33.095 org.springframework.web.context.ContextLoader 
+[main]    INFO: Root WebApplicationContext: initialization completed in 2650 ms 
+2020-10-15 16:58:33.708 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 
+[main]    INFO: Initializing ExecutorService 'applicationTaskExecutor' 
+2020-10-15 16:58:33.827 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 
+[main]    INFO: Adding welcome page template: index 
+2020-10-15 16:58:33.941 org.thymeleaf.templatemode.TemplateMode 
+[main]    WARN: [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead. 
+2020-10-15 16:58:34.041 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler 
+[main]    INFO: Initializing ExecutorService 'taskScheduler' 
+2020-10-15 16:58:34.068 org.apache.coyote.http11.Http11NioProtocol 
+[main]    INFO: Starting ProtocolHandler ["http-nio-80"] 
+2020-10-15 16:58:34.098 org.springframework.boot.web.embedded.tomcat.TomcatWebServer 
+[main]    INFO: Tomcat started on port(s): 80 (http) with context path '' 
+2020-10-15 16:58:34.111 com.base.guan.web.Application 
+[main]    INFO: Started Application in 4.995 seconds (JVM running for 7.736) 
+2020-10-15 16:58:34.115 com.base.guan.web.Application 
+[main]    INFO: 启动主程序成功 
+2020-10-15 16:58:37.474 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 
+[http-nio-80-exec-1]    INFO: Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2020-10-15 16:58:37.474 org.springframework.web.servlet.DispatcherServlet 
+[http-nio-80-exec-1]    INFO: Initializing Servlet 'dispatcherServlet' 
+2020-10-15 16:58:37.488 org.springframework.web.servlet.DispatcherServlet 
+[http-nio-80-exec-1]    INFO: Completed initialization in 13 ms 
+2020-10-15 16:58:37.522 com.base.guan.web.controller.IndexController 
+[http-nio-80-exec-1]    INFO: 登录 
+2020-10-15 17:10:14.742 com.base.guan.web.controller.IndexController 
+[http-nio-80-exec-1]    INFO: 登录 

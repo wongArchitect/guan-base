@@ -1,9 +1,7 @@
 package com.base.guan.web.controller;
 
-import com.base.guan.web.Application;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * IndexController
  *
- * @author lishudong
+ * @author fanjianjun
  * @version 1.0
  * @date 2019/12/03
  */
@@ -22,8 +20,7 @@ public class IndexController {
     private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
 
     /**
-     * 首页/history页面
-     * http://layout.jd.com
+     * 首页 / 登录
      *
      * @return index
      */
@@ -53,29 +50,5 @@ public class IndexController {
     @RequestMapping(value = "/settings", method = RequestMethod.GET)
     public ModelAndView toAdminSettings() {
         return new ModelAndView("index");
-    }
-
-    /**
-     * 新建 商品布局
-     * http://layout.jd.com/create
-     *
-     * @return index
-     */
-    @RequestMapping(value = "/create", method = RequestMethod.GET)
-    public ModelAndView toCreate() {
-        return new ModelAndView("index");
-    }
-
-    /**
-     * 计算结果 商品布局
-     * http://layout.jd.com/result
-     *
-     * @return index
-     */
-    @RequestMapping(value = "/result", method = RequestMethod.GET)
-    public ModelAndView toResult(String layoutId) {
-        ModelAndView view = new ModelAndView("index");
-        view.addObject("layoutId", layoutId);
-        return view;
     }
 }

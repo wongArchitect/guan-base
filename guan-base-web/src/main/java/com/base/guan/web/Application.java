@@ -55,7 +55,7 @@ public class Application extends SpringBootServletInitializer {
      */
     public static void main(String[] args) {
         SpringApplicationBuilder builder = new SpringApplicationBuilder(Application.class);
-//        builder.bannerMode(Banner.Mode.OFF);
+        builder.bannerMode(Banner.Mode.OFF);
         builder.run(args);
         logger.info("启动主程序成功" );
     }
