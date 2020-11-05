@@ -1,0 +1,26 @@
+捡到一个好插件：mybatis-generator-gui
+https://github.com/wongArchitect/mybatis-generator-gui.git
+
+1、整理：
+任务栏、桌面、开始菜单、使用管家更新软件和清理加速、删除无用大文件腾出硬盘空间
+2、安装与配置主要软件：
+idea2019.3 自测可到2099
+把以前带书签导入谷歌浏览器
+
+Git
+https://github.com
+user：wongArchitect
+ps：wongarch-wan
+
+maven和maven库
+
+ Jdk
+大部分的原有项目、插件不支持Java14，所以使用Java8
+
+数据库
+MySQL，版本为8.0.19、字符集用utf8
+
+办公软件
+用office
+4、备份
+上传主要软件
