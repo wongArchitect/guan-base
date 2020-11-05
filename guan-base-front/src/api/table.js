@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function getList(params) {
   return request({
-    url: '/vue-admin-template/table/list',
+    url: '/guan-base-admin/table/list',
     method: 'get',
     params
   })

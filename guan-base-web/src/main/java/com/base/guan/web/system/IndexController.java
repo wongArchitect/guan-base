@@ -5,8 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.Date;
-
 /**
  * IndexController
  *
@@ -23,9 +21,9 @@ public class IndexController extends SuperController {
      * @return index
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView index() {
+    public String index() {
         logger.info("  / [{}] 打开主页 。。。","jodron");
-        return new ModelAndView("index");
+        return "index";
     }
 
 }

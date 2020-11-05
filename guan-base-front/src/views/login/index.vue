@@ -83,13 +83,15 @@ export default {
       },
       loading: false,
       passwordType: 'password',
-      redirect: undefined
+      redirect: "/workbench"
     }
   },
   watch: {
     $route: {
       handler: function(route) {
-        this.redirect = "route.query && route.query.redirect"
+        // 因为有immediate: true 说明加载登录页面时就会执行handler函数，handler的第一个参数表示to,
+        // 所以上述代码的意义就是，加载登录页后，直接获取，登录页地址栏的的redirect参数，赋值给this.redirect
+        this.redirect = route.query && route.query.redirect
       },
       immediate: true
     }
@@ -107,12 +109,10 @@ export default {
     },
     handleLogin() {
       this.$refs.loginForm.validate(valid => {
-        console.info("login ....")
-        debugger
         if (valid) {
           this.loading = true
           this.$store.dispatch('user/login', this.loginForm).then(() => {
-            this.$router.push({ path: this.redirect || '/workbench' })
+            this.$router.push({ path:  this.redirect || '/workbench' })
             this.loading = false
           }).catch(() => {
             this.loading = false

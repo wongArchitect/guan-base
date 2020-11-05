@@ -71,80 +71,80 @@ export const constantRoutes = [
     ]
   },
 
-{
-  path: '/guan-content',
+  {
+    path: '/guan-content',
     component: Layout,
-  redirect: '/guan-content/content',
-  name: 'guan-content',
-  meta: { title: 'GUAN论', icon: 'form' },
-  children: [
-    {
-      path: 'content',
-      name: 'Content',
-      component: () => import('@/views/content/content'),
-    meta: { title: '文件管理器', icon: 'table' }
-},
-  {
-    path: 'tail',
-    name: 'Tail',
-    component: () => import('@/views/content/tail'),
-    meta: { title: '详情页', icon: 'table' }
-  },
-  {
-    path: 'update',
-      name: 'Update',
-    component: () => import('@/views/content/update'),
-    meta: { title: '新增/修改', icon: 'table' }
-  },
-  {
-    path: 'upload',
-      component: () => import('@/views/content/upload/upload'),
-    name: 'Upload',
-    meta: { title: '上传', icon: 'form' },
+    redirect: '/guan-content/content',
+    name: 'guan-content',
+    meta: { title: 'GUAN论', icon: 'form' },
     children: [
       {
-        path: 'upload',
-        name: 'Upload',
+        path: 'content',
+        name: 'Content',
+        component: () => import('@/views/content/content'),
+        meta: { title: '文件管理器', icon: 'table' }
+    },
+    {
+      path: 'tail',
+      name: 'Tail',
+      component: () => import('@/views/content/tail'),
+      meta: { title: '详情页', icon: 'table' }
+    },
+    {
+      path: 'update',
+      name: 'Update',
+      component: () => import('@/views/content/update'),
+      meta: { title: '新增/修改', icon: 'table' }
+    },
+    {
+      path: 'upload',
         component: () => import('@/views/content/upload/upload'),
-      meta: { title: '上传', icon: 'table' }
-      },
-      {
-        path: 'conflict',
-        name: 'Conflict',
-        component: () => import('@/views/content/upload/conflict'),
-        meta: { title: '冲突处理', icon: 'table' }
-      }
-    ]
+      name: 'Upload',
+      meta: { title: '上传', icon: 'form' },
+      children: [
+        {
+          path: 'upload',
+          name: 'Upload',
+          component: () => import('@/views/content/upload/upload'),
+          meta: { title: '上传', icon: 'table' }
+        },
+        {
+          path: 'conflict',
+          name: 'Conflict',
+          component: () => import('@/views/content/upload/conflict'),
+          meta: { title: '冲突处理', icon: 'table' }
+        }
+      ]
+    },
+    {
+      path: 'download',
+        name: 'Download',
+      component: () => import('@/views/content/download'),
+      meta: { title: '下载', icon: 'table' }
+    }
+  ]
   },
   {
-    path: 'download',
-      name: 'Download',
-    component: () => import('@/views/content/download'),
-    meta: { title: '下载', icon: 'table' }
-  }
-]
-},
-{
-  path: '/example',
-    component: Layout,
-  redirect: '/example/table',
-  name: 'Example',
-  meta: { title: 'Example', icon: 'el-icon-s-help' },
-  children: [
+    path: '/example',
+      component: Layout,
+    redirect: '/example/table',
+    name: 'Example',
+    meta: { title: 'Example', icon: 'el-icon-s-help' },
+    children: [
+      {
+        path: 'table',
+        name: 'Table',
+        component: () => import('@/views/table/index'),
+        meta: { title: 'Table', icon: 'table' }
+    },
     {
-      path: 'table',
-      name: 'Table',
-      component: () => import('@/views/table/index'),
-    meta: { title: 'Table', icon: 'table' }
-},
-  {
-    path: 'tree',
-      name: 'Tree',
-    component: () => import('@/views/tree/index'),
-    meta: { title: 'Tree', icon: 'tree' }
-  }
-]
-},
+      path: 'tree',
+        name: 'Tree',
+      component: () => import('@/views/tree/index'),
+      meta: { title: 'Tree', icon: 'tree' }
+    }
+  ]
+  },
 
   {
     path: '/form',

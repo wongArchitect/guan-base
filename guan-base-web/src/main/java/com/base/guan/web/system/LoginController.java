@@ -1,7 +1,5 @@
 package com.base.guan.web.system;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,9 +21,9 @@ public class LoginController  extends SuperController {
      * @return index
      */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public ModelAndView login() {
+    public String login() {
         logger.info("  / [{}] 登录系统 。。。","jodron");
-        return new ModelAndView("login");
+        return "login";
     }
 
     /**
